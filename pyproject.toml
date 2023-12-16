@@ -9,6 +9,7 @@ packages = [{include = "photo_kareliy"}]
 [tool.poetry.dependencies]
 python = "^3.11"
 flask = "^2.3.1"
+flask-sqlalchemy = "^3.0.3"
 
 
 [build-system]

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/css/main-block.css">
+    <link rel="stylesheet" href="/static/css/header.css">
+    <link rel="stylesheet" href="/static/css/popup.css">
+    <script src="/static/js/mainblock.js" defer></script>
+    <script defer src="/static/js/popup.js"></script>
+    <link rel="stylesheet" href="/static/css/gallery.css">
+    <link rel="stylesheet" href="/static/css/gallery_item.css">
+</head>
+<body>
+<div class="block">
+    <h1>ГАЛЕРЕЯ</h1>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div class="header header-dop">
+        <div class="back"><a href="{{ url_for('index') }}"><</a></div>
+        <div class="title_gallery"></div>
+
+        <div id="popup" class="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <a href="{{ url_for('gallery') }}" class="menu">галерея</a>
+                    <a href="#" class="menu">пейзаж</a>
+                    <a href="#" class="menu">флора и фауна</a>
+                    <a href="#" class="menu">города</a>
+                    <a href="#" class="menu">история</a>
+                    <buttun class="popup__close">X</buttun>
+                </div>
+            </div>
+        </div>
+
+        <div id="burger" class="burger">
+            <svg class="ham2" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+                <path class="top"
+                      d="m 70,33 h -40 c -6.5909,0 -7.763966,-4.501509 -7.763966,-7.511428 0,-4.721448 3.376452,-9.583771 13.876919,-9.583771 14.786182,0 11.409257,14.896182 9.596449,21.970818 -1.812808,7.074636 -15.709402,12.124381 -15.709402,12.124381"/>
+                <path class="middle" d="m 30,50 h 40"/>
+                <path class="bottom"
+                      d="m 70,67 h -40 c -6.5909,0 -7.763966,4.501509 -7.763966,7.511428 0,4.721448 3.376452,9.583771 13.876919,9.583771 14.786182,0 11.409257,-14.896182 9.596449,-21.970818 -1.812808,-7.074636 -15.709402,-12.124381 -15.709402,-12.124381"/>
+            </svg>
+
+        </div>
+    </div>
+
+    <div class="container-all">
+        <div class="container_image">
+            <span class="title">Lorem ipsum dolor</span>
+            <img src="https://bit.ly/2PvlS8Z" alt="">
+            <div class="item_text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis mi et tellus convallis volutpat ac
+                ut orci. Suspendisse laoreet mi sed elit consequat, et varius augue aliquet. Nam accumsan tempor odio
+                non consequat. Mauris facilisis et ligula vitae condimentum. Vivamus laoreet dolor ac velit finibus
+                consequat. Proin eget magna ex. Duis accumsan dictum tellus, non egestas odio pretium in. Cras accumsan
+                lectus non pretium pellentesque. Nam magna libero, semper mollis sollicitudin vel, aliquet quis ante.
+                Integer vitae faucibus lacus. Nunc leo nulla, tincidunt a libero at, hendrerit condimentum lectus.
+                Integer egestas, orci finibus varius euismod, risus mauris hendrerit lorem, non convallis nisi lectus
+                vel lacus. Aliquam auctor sed turpis non porta.
+
+                Donec dictum quam nec justo dignissim egestas sed non ligula. Phasellus a vehicula lacus. Duis sit amet
+                nibh in tortor ornare blandit pulvinar ut mauris. Sed tempor facilisis quam, et pharetra enim suscipit
+                sit amet. Donec laoreet egestas urna, eu placerat elit tincidunt non. Phasellus non turpis ut justo
+                porta malesuada at at est. Pellentesque vehicula leo lacus, eu auctor velit sagittis id. Praesent
+                eleifend, sapien non suscipit viverra, quam ligula commodo ipsum, quis egestas elit felis sit amet elit.
+                Aliquam dictum tempor interdum. Integer consectetur eros justo, eu mollis nulla dignissim consectetur.
+                Sed interdum aliquam turpis in vehicula. Duis elementum odio ac odio congue tincidunt. Proin a tincidunt
+                ante. Mauris maximus justo felis, vel facilisis urna tincidunt ac. Nulla diam lacus, egestas vitae enim
+                non, pharetra ornare elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+                ridiculus mus.
+
+                Vestibulum efficitur eget lorem at scelerisque. Nullam ac nisi eu ligula luctus sollicitudin molestie
+                eget libero. Phasellus at odio pulvinar magna maximus pellentesque. Praesent pharetra, ligula in
+                pulvinar dictum, dolor nisl mollis felis, nec gravida nisl sapien et lorem. Nam pulvinar mollis rhoncus.
+                Aliquam vel euismod odio, eu viverra orci. Vivamus eu magna et odio molestie commodo at sit amet dolor.
+                Curabitur sit amet orci et tortor pretium auctor quis a purus.
+
+                Aliquam in libero non enim placerat iaculis ac vel risus. Fusce ullamcorper aliquam lacinia. Sed porta
+                sollicitudin quam ac porttitor. Vestibulum mi sapien, lobortis non felis in, rutrum blandit mauris.
+                Morbi vitae turpis id nulla aliquet fringilla eu nec enim. Sed vel justo imperdiet, tempus nisl eget,
+                tempor risus. Proin bibendum pellentesque ex, sit amet facilisis turpis viverra ac. Vestibulum finibus
+                ultricies euismod. Aliquam erat volutpat. Pellentesque id tincidunt nulla. Nullam vel ante purus.
+
+                Duis non nulla posuere, placerat magna in, mollis ex. Nullam in arcu tincidunt, consequat orci ut,
+                congue orci. In blandit massa id sem volutpat dignissim eget id dui. Quisque luctus augue libero, ac
+                suscipit sem rutrum et. Donec sit amet lorem sed nunc commodo commodo gravida ut quam. Maecenas mauris
+                elit, malesuada vehicula felis vel, hendrerit facilisis nisi. In eget risus id risus feugiat suscipit ac
+                ac elit. Curabitur tempor purus sed gravida molestie.
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+
+</body>
+</html>

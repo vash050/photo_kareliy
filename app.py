@@ -23,5 +23,10 @@ def gallery():
     return render_template('gallery.html')
 
 
+@app.route('/gallery-item')
+def gallery_item():
+    return render_template('item_gallery.html')
+
+
 if __name__ == '__main__':
     app.run()

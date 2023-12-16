@@ -1,10 +1,16 @@
-.header{
+.header {
     width: 100%;
     background-repeat: no-repeat;
     position: absolute;
-    z-index: 1;
+    /*z-index: 1;*/
     display: flex;
     justify-content: flex-end;
+}
+
+.burger {
+    z-index: 1;
+    display: flex;
+    height: 100%;
 }
 
 .ham2 {
@@ -13,22 +19,27 @@
     transition: transform 400ms;
     user-select: none;
 }
-.ham2 path{
+
+.ham2 path {
     fill: none;
     transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
     stroke: #ffffff;
     stroke-width: 5.5;
     stroke-linecap: round;
 }
+
 .ham2 .top {
     stroke-dasharray: 40 121;
 }
+
 .ham2 .bottom {
     stroke-dasharray: 40 121;
 }
+
 .ham2.active .top {
     stroke-dashoffset: -102px;
 }
+
 .ham2.active .bottom {
     stroke-dashoffset: -102px;
 }

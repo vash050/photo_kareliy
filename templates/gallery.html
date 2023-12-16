@@ -4,42 +4,80 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="/static/css/main-block.css">
+    <link rel="stylesheet" href="/static/css/header.css">
+    <link rel="stylesheet" href="/static/css/popup.css">
+    <script src="/static/js/mainblock.js" defer></script>
+    <script src="/static/libs/rain.js" defer></script>
+    <script defer src="/static/js/popup.js"></script>
     <link rel="stylesheet" href="/static/css/gallery.css">
+
 </head>
 <body>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<h1>ГАЛЕРЕЯ</h1>
-<div class="container-all">
-<div class="container">
-  <img src="https://bit.ly/2PvlS8Z" alt="">
-   <span class="title">Lorem ipsum dolor</span>
-  <span class="text">Morbi diam viverra mattis sociis magna, habitasse penatibus non lectus</span>
-</div>
-<div class="container">
-  <img src="https://bit.ly/2PXNumM" alt="">
-  <span class="title">Lorem ipsum dolor</span>
-  <span class="text">Morbi diam viverra mattis sociis magna, habitasse penatibus non lectus</span>
-</div>
-<div class="container">
-  <img src="https://bit.ly/2KbUszm" alt="">
-   <span class="title">Lorem ipsum dolor</span>
-  <span class="text">Morbi diam viverra mattis sociis magna, habitasse penatibus non lectus</span>
-</div>
-<div class="container">
-  <img src="https://bit.ly/2FnhYul" alt="">
-   <span class="title">Lorem ipsum dolor</span>
-  <span class="text">Morbi diam viverra mattis sociis magna, habitasse penatibus non lectus</span>
-</div>
-<div class="container">
-  <img src="https://bit.ly/2FznWrU" alt="">
-   <span class="title">Lorem ipsum dolor</span>
-  <span class="text">Morbi diam viverra mattis sociis magna, habitasse penatibus non lectus</span>
-</div>
-<div class="container">
-  <img src="https://bit.ly/2zd3HLf" alt="">
-   <span class="title">Lorem ipsum dolor</span>
-  <span class="text">Morbi diam viverra mattis sociis magna, habitasse penatibus non lectus</span>
-</div>
+<div class="block">
+    <h1>ГАЛЕРЕЯ</h1>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div class="header header-dop">
+        <div class="back"><a href="{{ url_for('index') }}"><</a></div>
+        <div class="title_gallery"></div>
+
+        <div id="popup" class="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <a href="{{ url_for('gallery') }}" class="menu">галерея</a>
+                    <a href="#" class="menu">пейзаж</a>
+                    <a href="#" class="menu">флора и фауна</a>
+                    <a href="#" class="menu">города</a>
+                    <a href="#" class="menu">история</a>
+                    <buttun class="popup__close">X</buttun>
+                </div>
+            </div>
+        </div>
+
+        <div id="burger" class="burger">
+            <svg class="ham2" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+                <path class="top"
+                      d="m 70,33 h -40 c -6.5909,0 -7.763966,-4.501509 -7.763966,-7.511428 0,-4.721448 3.376452,-9.583771 13.876919,-9.583771 14.786182,0 11.409257,14.896182 9.596449,21.970818 -1.812808,7.074636 -15.709402,12.124381 -15.709402,12.124381"/>
+                <path class="middle" d="m 30,50 h 40"/>
+                <path class="bottom"
+                      d="m 70,67 h -40 c -6.5909,0 -7.763966,4.501509 -7.763966,7.511428 0,4.721448 3.376452,9.583771 13.876919,9.583771 14.786182,0 11.409257,-14.896182 9.596449,-21.970818 -1.812808,-7.074636 -15.709402,-12.124381 -15.709402,-12.124381"/>
+            </svg>
+
+        </div>
+    </div>
+
+
+    <div class="container-all">
+        <div class="container">
+            <img src="https://bit.ly/2PvlS8Z" alt="">
+            <span class="title">Lorem ipsum dolor</span>
+            <span class="text">Morbi diam viverra mattis sociis magna, habitasse penatibus non lectus</span>
+        </div>
+        <div class="container">
+            <img src="https://bit.ly/2PXNumM" alt="">
+            <span class="title">Lorem ipsum dolor</span>
+            <span class="text">Morbi diam viverra mattis sociis magna, habitasse penatibus non lectus</span>
+        </div>
+        <div class="container">
+            <img src="https://bit.ly/2KbUszm" alt="">
+            <span class="title">Lorem ipsum dolor</span>
+            <span class="text">Morbi diam viverra mattis sociis magna, habitasse penatibus non lectus</span>
+        </div>
+        <div class="container">
+            <img src="https://bit.ly/2FnhYul" alt="">
+            <span class="title">Lorem ipsum dolor</span>
+            <span class="text">Morbi diam viverra mattis sociis magna, habitasse penatibus non lectus</span>
+        </div>
+        <div class="container">
+            <img src="https://bit.ly/2FznWrU" alt="">
+            <span class="title">Lorem ipsum dolor</span>
+            <span class="text">Morbi diam viverra mattis sociis magna, habitasse penatibus non lectus</span>
+        </div>
+        <div class="container">
+            <img src="https://bit.ly/2zd3HLf" alt="">
+            <span class="title">Lorem ipsum dolor</span>
+            <span class="text">Morbi diam viverra mattis sociis magna, habitasse penatibus non lectus</span>
+        </div>
+    </div>
 </div>
 </body>
 </html>
